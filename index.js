@@ -1,9 +1,7 @@
 const core = require("@actions/core");
 const github = require("@actions/github");
 
-
 // 和外部的交互都需要使用 core 来做处理
-
 try {
   // `who-to-greet` input defined in action metadata file
   // 这个就是给到 action 的参数
