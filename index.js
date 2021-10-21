@@ -9,10 +9,7 @@ try {
   const nameToGreet = core.getInput("who-to-greet");
   console.log(`Hello ${nameToGreet}!`);
   const time = new Date().toTimeString();
-  // TODO
-  // 那我在这里可以请求 github api 嘛？
-  // output 是输出给谁的？ 
-  // 谁用？
+  // 用户可以通过 steps.[stepId].outputs.time 来获取到 output 的key
   core.setOutput("time", time);
   // Get the JSON webhook payload for the event that triggered the workflow
   const payload = JSON.stringify(github.context.payload, undefined, 2);
